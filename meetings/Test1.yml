@@ -297,6 +297,7 @@ commentId: N:System
 name: System
 fullName: System
 summary: The <xref data-throw-if-not-resolved="true" uid="System"></xref> namespace contains fundamental classes and base classes that define commonly-used value and reference data types, events and event handlers, interfaces, attributes, and processing exceptions.
+examples: This is test
 remarks: "Other classes provide services supporting data type conversion, method parameter manipulation, mathematics, remote and local program invocation, application environment management, and supervision of managed and unmanaged applications.  \n  \n To access types in the <xref:System> namespace from C# code without having to provide fully qualified type names, include the `using System;` statement at the beginning of your source code file.  \n  \n To access types in the <xref:System> namespace from C++/CLI code without having to provide fully qualified type names, include the `using namespace System;` statement at the beginning of your source code file. In addition, you must compile with the [/clr](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c) switch."
 seeAlso: >+
   - <xref:System.String>
