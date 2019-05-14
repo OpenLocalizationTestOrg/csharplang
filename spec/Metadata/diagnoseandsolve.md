@@ -10,6 +10,7 @@ selfHelpType="diagnoseandsolvev2"
 resourceTags="linux"
 productPesId="15571"
 cloudEnvironments="public"
+no-loc: [This, Test, 123]
 />
 ---
 {
@@ -65,13 +66,14 @@ cloudEnvironments="public"
       },
       {
          "title":"Can't connect to virtual machine",
-         "description":"Discover issues that may be affecting connectivity to your VM due to either  platform issue or VM issue",
+         "description":"Discover issues that may be affecting connectivity to your VM due to either  platform issue or VM issue This is Test 123",
          "newTagExpiryDate":"",
          "type":"insight",
          "searchTags":"connectvity, rdp",
          "category":"Connectivity",
          "supportTopicId":"4354354565",
          "symptomId":"cannotrdpazureportalinsight"
+          :::no-loc text=”This is test no-loc”::: 
       }
    ]
 }
