@@ -10,7 +10,7 @@ selfHelpType="diagnoseandsolvev2"
 resourceTags="linux"
 productPesId="15571"
 cloudEnvironments="public"
-no-loc: [This, Test, 123]
+no-loc: [title , searchTags]
 />
 ---
 {
