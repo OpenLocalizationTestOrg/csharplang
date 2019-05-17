@@ -9,11 +9,12 @@ ms.topic: article
 ms.date: 01/29/2019
 ms.author: kasparks
 noloc: [ms.date, ms.topic]
+noloc: [TEST , 123]
 ---
 
 # Reduce service costs using Azure Advisor
 
-Advisor helps you optimize and reduce your overall Azure spend by identifying idle and underutilized resources. You can get cost recommendations from the **Cost** tab on the Advisor dashboard.
+Advisor helps you optimize and reduce your overall Azure spend by identifying idle and underutilized resources. You can get cost recommendations from the **Cost** tab on the Advisor dashboard. This is TEST 123.
 
 ## Optimize virtual machine spend by resizing or shutting down underutilized instances 
 
