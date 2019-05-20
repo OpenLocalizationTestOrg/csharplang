@@ -8,7 +8,7 @@ ms.service: advisor
 ms.topic: article
 ms.date: 01/29/2019
 ms.author: kasparks
-no-loc: [ms.date, ms.topic]
+no-loc: [description, ms.topic]
 ---
 
 # Reduce service costs using Azure Advisor
