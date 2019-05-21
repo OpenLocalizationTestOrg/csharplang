@@ -8,7 +8,7 @@ ms.service: advisor
 ms.topic: article
 ms.date: 01/29/2019
 ms.author: kasparks
-no-loc: [Use Azure Advisor to optimize the cost of your Azure deployments, article]
+no-loc: [Advisor,virtual machines] 
 ---
 
 # Reduce service costs using Azure Advisor
