@@ -46,7 +46,8 @@ Advisor identifies public IP addresses that are not currently associated to Azur
 1. Sign in to the [Azure portal](https://portal.azure.com), and then open [Advisor](https://aka.ms/azureadvisordashboard).
 
 2.	On the Advisor dashboard, click the **Cost** tab.
-:::no-loc Test="This is Test String":::
+:::no-loc Text="Test Review":::
+:::no-loc Text="This is Test String"::: 
 ## Next steps
 
 To learn more about Advisor recommendations, see:
