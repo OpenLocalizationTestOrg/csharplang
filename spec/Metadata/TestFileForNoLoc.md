@@ -48,6 +48,8 @@ Advisor identifies public IP addresses that are not currently associated to Azur
 2.	On the Advisor dashboard, click the **Cost** tab.
 :::no-loc Text="Test Review":::This should be localized 123
 :::no-loc Text="This is Test String":::  This should be localized
+:::no-loc text="Test Review":::This should be localized 123 small t
+:::no-loc text="This is Test String":::  This should be localized small t
 ## Next steps
 
 To learn more about Advisor recommendations, see:
