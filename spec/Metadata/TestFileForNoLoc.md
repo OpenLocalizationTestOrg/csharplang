@@ -8,7 +8,7 @@ ms.service: advisor
 ms.topic: article
 ms.date: 01/29/2019
 ms.author: kasparks
-no-loc: [Advisor,virtual machines] 
+no-loc: [Advisor,virtual machines,virtual machine] 
 ---
 
 # Reduce service costs using Azure Advisor
@@ -46,10 +46,8 @@ Advisor identifies public IP addresses that are not currently associated to Azur
 1. Sign in to the [Azure portal](https://portal.azure.com), and then open [Advisor](https://aka.ms/azureadvisordashboard).
 
 2.	On the Advisor dashboard, click the **Cost** tab.
-:::no-loc Text="Test Review":::This should be localized 123
-:::no-loc Text="This is Test String":::  This should be localized
-:::no-loc text="Test Review":::This should be localized 123 small t
-:::no-loc text="This is Test String":::  This should be localized small t
+This is a :::no-loc text="TEST for inline lock"::: to see if the "TEST for inline loc" will be removed or put as a tag.
+
 ## Next steps
 
 To learn more about Advisor recommendations, see:
