@@ -1,14 +1,13 @@
 ---
-title:include file
-description:include file
-services:virtual-machines
-author:rockboyfor
-ms.topic:include
-origin.date:10/08/2018
-ms.date:07/01/2019
-ms.author:v-yeche
-ms.custom:include file
-
+title: include file
+description: include file
+services: virtual-machines
+author: rockboyfor
+ms.topic: include
+origin.date: 10/08/2018
+ms.date: 07/01/2019
+ms.author: v-yeche
+ms.custom: include file
 ---
 
 
