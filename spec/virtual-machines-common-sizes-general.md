@@ -3,7 +3,6 @@ title:include file
 description:include file
 services:virtual-machines
 author:rockboyfor
-#ms.service:virtual-machines
 ms.topic:include
 origin.date:10/08/2018
 ms.date:07/01/2019
