@@ -14,4 +14,3 @@ ms.custom:include file
 
 General purpose VM sizes provide balanced CPU-to-memory ratio. Ideal for testing and development, small to medium databases, and low to medium traffic web servers. This article provides information about the number of vCPUs, data disks and NICs as well as storage throughput for sizes in this grouping. 
 
-<!--Not Available on [DC-series](#dc-series)-->
