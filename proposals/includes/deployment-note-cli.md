@@ -1,4 +1,4 @@
-If you are using services such as LUIS, you will also need to pass `luisAuthoringKey`. If you want to use existing resource group in Azure, use the `groupName` argument with the above command.
+If you are using services such as LUIS, you will also need to pass `luisAuthoringKey`. If you want to use existing resource group in Azure, use the `groupName` argument with the above  command.
 
 It is highly recommended that you use the `verbose` option to help troubleshoot problems that might occur during the deployment of the bot. Additional options used with the `msbot clone services` command are described below:
 
