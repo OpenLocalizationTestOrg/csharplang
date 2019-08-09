@@ -8,7 +8,6 @@ ms.service: advisor
 ms.topic: article
 ms.date: 01/29/2019
 ms.author: kasparks
-no-loc: [Advisor,virtual machines,virtual machine] 
 ---
 
 # Reduce service costs using Azure Advisor
@@ -48,6 +47,12 @@ Advisor identifies public IP addresses that are not currently associated to Azur
 2.	On the Advisor dashboard, click the **Cost** tab.
 This is a :::no-loc text="TEST for inline lock"::: to see if the "TEST for inline loc" will be removed or put as a tag.
 
+:::image source="https://portal.azure.com" alt-text="This is image source Test":::
+TLong Description start.Advisor identifies public IP addresses that are not currently associated to Azure resources such as Load Balancers or VMs. These public IP addresses come with a nominal charge. If you do not plan to use them, deleting them can result in cost savings.
+Long description end
+:::image-end:::This is image end
+
+::: image source= "./Test.png" alt-test="space teating":::
 ## Next steps
 
 To learn more about Advisor recommendations, see:
