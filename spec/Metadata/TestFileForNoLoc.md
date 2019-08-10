@@ -43,6 +43,8 @@ Advisor identifies public IP addresses that are not currently associated to Azur
 ## How to access Cost recommendations in Azure Advisor
 
 1. Sign in to the [Azure portal](https://portal.azure.com), and then open [Advisor](https://aka.ms/azureadvisordashboard).
+:::icon source="image\Test123.png":::This is icon source test
+This is test of next line
 
 2.	On the Advisor dashboard, click the **Cost** tab.
 This is a :::no-loc text="TEST for inline lock"::: to see if the "TEST for inline loc" will be removed or put as a tag.
