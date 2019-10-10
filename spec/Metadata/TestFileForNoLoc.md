@@ -54,7 +54,7 @@ TLong Description start.Advisor identifies public IP addresses that are not curr
 Long description end
 :::image-end:::This is image end
 
-::: image source= "./Test.png" alt-test="space teating":::
+::: image source= "./Test.png" alt-text="space teating":::
 ## Next steps
 
 To learn more about Advisor recommendations, see:
