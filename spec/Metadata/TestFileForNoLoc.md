@@ -59,9 +59,9 @@ TLong Description start.Advisor identifies public IP addresses that are not curr
 Long description end
 :::image-end:::This is image end
 
-::: image source= "./Test.png" alt-text="space teating":::
+::: image source= "image\Test1noicon.png" alt-text="space teating":::
 
-:::image type="complex" source="./Test.png" alt-text="this is a complex image testing feature for loc-scope2" loc-scope="Azure"::: 
+:::image type="complex" source="image\Test1noicon.png" alt-text="this is a complex image testing feature for loc-scope2" loc-scope="Azure"::: 
 this is a log description for complex image testing feature for loc-scope2
 This is multiline testing2
 :::image-end:::
