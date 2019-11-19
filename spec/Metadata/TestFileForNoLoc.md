@@ -10,7 +10,7 @@ ms.date: 01/29/2019
 ms.author: kasparks
 ---
 
-![Test1noicon](../../../image/Test1noicon.png)
+![Test1noicon](/../image/Test1noicon.png)
 
 # Reduce service costs using Azure Advisor
 
