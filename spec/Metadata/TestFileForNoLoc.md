@@ -10,6 +10,8 @@ ms.date: 01/29/2019
 ms.author: kasparks
 ---
 
+![Test1noicon](/image/Test1noicon.png)
+
 # Reduce service costs using Azure Advisor
 
 Advisor helps you optimize and reduce your overall Azure spend by identifying idle and underutilized resources. You can get cost recommendations from the **Cost** tab on the Advisor dashboard. This is TEST 123.
