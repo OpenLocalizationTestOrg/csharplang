@@ -44,9 +44,9 @@ Advisor identifies public IP addresses that are not currently associated to Azur
 
 ## How to access Cost recommendations in Azure Advisor
 
-:::image type="complex"  alt-text="this is a complex image testing feature for loc-scope1" loc-scope="Azure" source="./Test.png"::: 
-this is a log description for complex image testing feature for loc-scope1
-This is multiline testing1
+:::image type="complex"  alt-text="this is a complex image testing feature for image SxS behavior" source="./image/Test1noicon.png"::: 
+this is a log description for complex image testing feature for SxS
+This is SxS multiline testing1
 :::image-end:::
 
 1. Sign in to the [Azure portal](https://portal.azure.com), and then open [Advisor](https://aka.ms/azureadvisordashboard).
