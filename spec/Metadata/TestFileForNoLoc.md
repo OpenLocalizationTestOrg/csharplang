@@ -8,6 +8,7 @@ ms.service: advisor
 ms.topic: article
 ms.date: 01/29/2019
 ms.author: kasparks
+no-loc: [advisor , Test]
 ---
 
 ![Test1noicon](./image/Test1noicon.png)
