@@ -68,6 +68,81 @@ Long description end
 this is a log description for complex image testing feature for loc-scope2
 This is multiline testing2
 :::image-end:::
+<a name="section_C_5_map_values_fields"></a>
+
+### C.5 *sys.dm_xe_map_values* and event fields
+
+
+The following SELECT includes a JOIN to the tricky view named *sys.dm_xe_map_values*.
+
+The purpose of the SELECT display the numerous fields that you can choose from for your event session. The event fields can be used in two ways:
+
+- To choose which field values will be written to your target for each event occurrence..
+- To filter which event occurrences will be sent to versus kept from your target.
+
+
+```sql
+SELECT  --C.5
+		dp.name         AS [Package],
+		do.name         AS [Object],
+		do.object_type  AS [Object-Type],
+		'o--c'     AS [O--C],
+		dc.name         AS [Column],
+		dc.type_name    AS [Column-Type-Name],
+		dc.column_type  AS [Column-Type],
+		dc.column_value AS [Column-Value],
+		'c--m'     AS [C--M],
+		dm.map_value    AS [Map-Value],
+		dm.map_key      AS [Map-Key]
+	FROM
+		      sys.dm_xe_objects         AS do
+		JOIN  sys.dm_xe_object_columns  AS dc
+
+			ON  dc.object_name = do.name
+
+		JOIN  sys.dm_xe_map_values      AS dm
+
+			ON  dm.name = dc.type_name
+
+		JOIN  sys.dm_xe_packages        AS dp
+
+			ON  dp.guid = do.package_guid
+	WHERE
+		do.object_type = 'event'
+		AND
+		do.name        = '\<YOUR-EVENT-NAME-HERE!>'  --'lock_deadlock'
+	ORDER BY
+		[Package],
+		[Object],
+		[Column],
+		[Map-Value];
+```
+
+
+#### Output
+
+<a name="resource_type_dmv_actual_row"></a>
+
+Next is a sampling of the actual 153 rows of output from the preceding T-SQL SELECT. The row for **resource_type** is [relevant](#resource_type_PAGE_cat_view) to the predicate filtering used in the **event_session_test3** example elsewhere in this article.
+
+
+```
+/***  5 sampled rows from the actual 153 rows returned.
+	NOTE:  'resource_type' under 'Column'.
+
+Package     Object          Object-Type   O--C   Column          Column-Type-Name     Column-Type   Column-Value   C--M   Map-Value        Map-Key
+-------     ------          -----------   ----   ------          ----------------     -----------   ------------   ----   ---------        -------
+sqlserver   lock_deadlock   event         o--c   CHANNEL         etw_channel          readonly      2              c--m   Operational      4
+sqlserver   lock_deadlock   event         o--c   KEYWORD         keyword_map          readonly      16             c--m   access_methods   1024
+sqlserver   lock_deadlock   event         o--c   mode            lock_mode            data          NULL           c--m   IX               8
+sqlserver   lock_deadlock   event         o--c   owner_type      lock_owner_type      data          NULL           c--m   Cursor           2
+sqlserver   lock_deadlock   event         o--c   resource_type   lock_resource_type   data          NULL           c--m   PAGE             6
+
+Therefore, on your CREATE EVENT SESSION statement, in its ADD EVENT WHERE clause,
+you could put:
+	WHERE( ... resource_type = 6 ...)  -- Meaning:  6 = PAGE.
+***/
+```
 
 ## Next steps
 
