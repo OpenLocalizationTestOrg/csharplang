@@ -9,12 +9,8 @@ ms.topic: tutorial
 ms.assetid: 04521d7f-588c-4259-abc2-1a2857eb05ec
 author: MightyPen
 ms.author: genemi
-ms.custom: seo-lt-2019
-monikerRange: "=azuresqldb-current||>=sql-server-2016||=sqlallproducts-allversions||>=sql-server-linux-2017||=azuresqldb-mi-current"
 ---
 # SELECTs and JOINs From System Views for Extended Events in SQL Server
-
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
 
 
 This article explains the two sets of system views that relate to extended events in SQL Server and in Azure SQL Database. The article illustrates:
@@ -110,36 +106,6 @@ Reference documentation about the catalog views for extended events is at [Exten
 In SSMS, in its **Object Explorer**, you can start the **New Session** dialog by expanding **Management** > **Extended Events**, and then right-clicking **Sessions** > **New Session**.
 
 In the large **New Session** dialog, in its first section labeled **General**, we see the option has been selected to **Start the event session at server startup**.
-
-![New Session > General, Start the event session at server startup.](../../relational-databases/extended-events/media/xevents-ssms-ac105-eventname-startup.png)
-
-
-Next on the **Events** section, we see the **lock_deadlock** event was chosen. For that event, we see that three **Actions** have been selected. This means the **Configure** button was clicked, which becomes gray after being clicked.
-
-![New Session > Events, Global Fields (Actions)](../../relational-databases/extended-events/media/xevents-ssms-ac110-actions-global.png)
-
-
-<a name="resource_type_PAGE_cat_view"></a>
-
-Next, still on the **Events** > **Configure** section, we see that [**resource_type** has been set to **PAGE**](#resource_type_dmv_actual_row). This means that event data will not be sent from the event engine to the target if the **resource_type** value is anything other than **PAGE**.
-
-We see additional predicate filters for the database name and for a counter.
-
-![New Session > Events, Filter Predicate Fields (Actions)](../../relational-databases/extended-events/media/xevents-ssms-ac115-predicate-db.png)
-
-
-Next on the **Data Storage** section, we see the **event_file** has been chosen as a target. Further, we see that the **Enable file roleover** option has been selected.
-
-![New Session > Data Storage, eventfile_enablefileroleover](../../relational-databases/extended-events/media/xevents-ssms-ac120-target-eventfile.png)
-
-
-Finally, on the **Advanced** section, we see that the **Maximum dispatch latency** value was reduced down to 4 seconds.
-
-![New Session > Advanced, Maximum dispatch latency](../../relational-databases/extended-events/media/xevents-ssms-ac125-latency4.png)
-
-
-This completes the SSMS UI perspective on an event session definition.
-
 
 <a name="section_B_2_TSQL_perspective"></a>
 
@@ -373,9 +339,6 @@ This completes the section on catalog views.
 
 
 We now shift to DMVs. This section provides several Transact-SQL SELECT statements which each serve a specific useful business purpose. Further, the SELECTs demonstrate how you can JOIN the DMVs together for any new uses you want.
-
-
-Reference documentation of the DMVs is available at [Extended Events Dynamic Management Views](../../relational-databases/system-dynamic-management-views/extended-events-dynamic-management-views.md)
 
 
 In this article, any actual output rows from the following SELECTs are from SQL Server 2016, unless otherwise specified.
