@@ -26,7 +26,7 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content",
-        "NetNamespace": "Content"
+        "NetNamespace": "Content",
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
@@ -60,7 +60,8 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content",
-        "NetNamespace": "Content"
+        "NetNamespace": "Content",
+        "ZonePivotGroups：": "ZonePivotGroups"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
