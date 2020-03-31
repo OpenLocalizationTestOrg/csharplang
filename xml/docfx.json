@@ -5,7 +5,7 @@
         "files": [
           "**/*.md",
           "**/*.yml",
-          "**/*.xml"
+          "**/Microsoft.VisualBasic/*.xml"
         ],
         "exclude": [
           "**/obj/**",
