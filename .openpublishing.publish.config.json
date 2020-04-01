@@ -1,18 +1,52 @@
 {
   "docsets_to_publish": [
     {
-      "docset_name": "csharplang-xml",
-      "build_source_folder": "xml",
-      "build_output_subfolder": "csharplang-xml",
+      "docset_name": "dotnet-api-docs",
+      "build_source_folder": ".",
+      "build_output_subfolder": ".",
       "locale": "en-us",
+      "xref_query_tags": ["/uwp/api"],
       "monikers": [],
       "moniker_ranges": [],
+      "filemap_share_depots": ["VS.core-docs"],
       "open_to_public_contributors": true,
       "type_mapping": {
-        "Conceptual": "Content"
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "NetEnum": "Content",
+        "NetDelegate": "Content",
+        "NetNamespace": "Content",
+        "NetMember": "Content",
+        "NetType": "Content",
+        "Tutorial": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "base_path": "dotnet",
+      "site_name": "Docs",
+      "customized_tasks": {
+        "docset_prebuild": [
+          "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
+          "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
+          "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
+        ],
+        "docset_postbuild": [
+          "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
+        ]
+      },
+      "ECMA2Yaml": {
+        "SourceXmlFolder": "xml",
+        "OutputYamlFolder": "api",
+        "Flatten": true,
+        "SDPMode": true
+      },
+      "SplitTOC": [
+        "api/toc.yml"
+      ],
+      "DiffFolder": [
+        "api"
+      ],
+      "pdf_build_exclude_tocs": []
     },
     {
       "docset_name": "meetings",
