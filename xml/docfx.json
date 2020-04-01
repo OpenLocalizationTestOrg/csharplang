@@ -4,8 +4,8 @@
     "content": [
       {
         "files": [
-          "api/xml/**/*.md",
-          "api/xml/**/*.yml"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
