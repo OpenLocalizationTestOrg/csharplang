@@ -1,5 +1,6 @@
 {
   "build": {
+    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
@@ -26,6 +27,8 @@
           "**/*.png",
           "**/*.jpg"
         ],
+        "src": "add",
+        "dest": ".",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -45,7 +48,6 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "csharplang-xml",
-    "markdownEngineName": "markdig"
+    "dest": "csharplang-xml"
   }
 }
