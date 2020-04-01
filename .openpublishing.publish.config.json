@@ -108,12 +108,6 @@
   "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
-      "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
-      "branch_mapping": {}
-    },
-    {
       "id": "Microsoft.DocAsCode.ECMA2Yaml",
       "nuget_feed": "https://www.myget.org/F/op/api/v2",
       "path_to_root": "_dependentPackages/ECMA2Yaml",
