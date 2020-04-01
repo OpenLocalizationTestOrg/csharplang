@@ -34,7 +34,7 @@
 			},
 			"ECMA2Yaml": {
 				"SourceXmlFolder": "xml",
-				"OutputYamlFolder": "api",
+				"OutputYamlFolder": "xml/api",
 				"Flatten": true,
 				"SDPMode": true
 			},
