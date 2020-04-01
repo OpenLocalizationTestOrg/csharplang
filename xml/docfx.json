@@ -3,9 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md",
-          "**/*.yml",
-          "**/Microsoft.VisualBasic/**"
+          "api/**/*.md",
+          "api/**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
