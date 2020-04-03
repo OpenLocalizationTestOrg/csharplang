@@ -1,7 +1,7 @@
 {
 	"docsets_to_publish": [{
 			"docset_name": "csharplang-xml",
-			"build_source_folder": "xml",
+			"build_source_folder": ".",
 			"build_output_subfolder": "csharplang-xml",
 			"locale": "en-us",
 			"monikers": [],
